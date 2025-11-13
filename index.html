@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve「lazy cat」video player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sound.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="tv-frame">
+            <img src="tv.jpg" alt="TV frame">
+
+            <video id="myVideo" poster="media/thumbnail.jpg" style="width:790px; height:auto; object-fit: cover;">
+                <source src="media/lazy cat  – Eve MV - Eve (1080p, h264).mp4" type="video/mp4">
+            </video>
+
+            <img id="playPauseBtn" src="play.gif" alt="Play" class="play-btn">
+
+            <img id="soundBtn" src="power.gif" alt="mp3 play" class="sound-btn">
+            <audio id="sound" src="media/rice.mp3"></audio>
+        </div>
+
+        
+        
+        <script>
+            const video = document.getElementById("myVideo");
+            const btn = document.getElementById("playPauseBtn");
+
+            btn.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    btn.src = "pause.gif"; // swap to pause
+                } else {
+                    video.pause();
+                    btn.src = "play.gif"; // swap to play
+                }
+            });
+        </script>
+
+
+
+
+
+    </main>
+</body>
+
+</html>
