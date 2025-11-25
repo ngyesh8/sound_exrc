@@ -63,3 +63,47 @@ body {
 .sound-btn.disabled {
     opacity: 0.6;
 }
+
+
+/* --- PHONE VIEW (under 600px) --- */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding-top: 40px;
+        display: block;
+    }
+
+    .tv-frame {
+        width: 70vw;        /* scale down for mobile */
+        position: relative; /* stack vertically instead of absolute */
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+    }
+
+    .tv-frame video {
+        position: absolute;
+        top: 24%; 
+        left: 23%;
+        width: 55%;        /* scaled to TV screen area */
+        max-width: none;
+    }
+
+    .play-btn,
+    .sound-btn {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 40vw;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .play-btn {
+        margin-top: 20px;
+    }
+
+    .sound-btn {
+        margin-top: 10px;
+    }
+}
