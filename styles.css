@@ -71,7 +71,7 @@ body {
 
 @media (max-width: 700px) {
     .tv-scale {
-        transform: scale(0.3);
+        transform: scale(0.25);
         transform-origin: top center;
     }
 }
