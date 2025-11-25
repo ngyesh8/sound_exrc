@@ -64,9 +64,9 @@ body {
     opacity: 0.6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .tv-frame {
-        transform: scale(0.7); /* or 0.5, 0.6, etc. */
+        transform: scale(0.55);   /* adjust to your taste */
         transform-origin: top left;
     }
 }
