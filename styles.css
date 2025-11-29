@@ -72,10 +72,7 @@ body {
 
 @media (max-width: 700px) {
     .tv-scale {
-        transform: scale(0.27)
+        transform: scale(0.27) translateX(-2000%);
         transform-origin: top center;
     }
-    .tv-frame * {
-    left: 0 !important;
-  }
 }
